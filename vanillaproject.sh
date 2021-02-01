@@ -35,9 +35,9 @@ mkdir $jsDirectory/api
 
 echo "iniciando o npm"
 npm init -y
-yarn add -D webpack webpack-cli style-loader css-loader
+npm i -D webpack webpack-cli style-loader css-loader
 #-----
-clear
+
 #Style config
 echo "SCSS(1) ou CSS(2), caso nenhum seja definido, o CSS é será default"
 select styleChoosed in SCSS CSS
@@ -45,12 +45,12 @@ select styleChoosed in SCSS CSS
 	  case $styleChoosed in
 		SCSS )
 			echo "Utilizando o SCSS";
-			yarn add -D sass-loader sass fibers
+			npm i -D sass-loader sass fibers
 			styleSheet="scss";
 			styleWebpackConfig="{
 				test: /\.s[ac]ss$/i,
         use: [
-          // Creates `style` nodes from JS strings
+          // Creates \`style\` nodes from JS strings
           \"style-loader\",
           // Translates CSS into CommonJS
           \"css-loader\",
@@ -73,7 +73,7 @@ select styleChoosed in SCSS CSS
 			styleWebpackConfig="{
 				test: /\.css$/i,
         use: [
-          // Creates `style` nodes from JS strings
+          // Creates \`style\` nodes from JS strings
           \"style-loader\",
           // Translates CSS into CommonJS
           \"css-loader\",
@@ -88,7 +88,7 @@ select styleChoosed in SCSS CSS
 			styleWebpackConfig="{
 				test: /\.css$/i,
         use: [
-          // Creates `style` nodes from JS strings
+          // Creates \`style\` nodes from JS strings
           \"style-loader\",
           // Translates CSS into CommonJS
           \"css-loader\",
@@ -160,6 +160,6 @@ sed -i "$lineToBeDeletedInPackageJson d" $packageJsonFile
 #Add new scrips
 sed -i "$scriptsLineInPackageJsonBegin a $newScripts" $packageJsonFile
 
-clear
+
 echo "PRONTO! entrar no diretório (cd $projectName) e começar a codar"
 echo "Bom hack! :)"
