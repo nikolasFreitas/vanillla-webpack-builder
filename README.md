@@ -1,9 +1,9 @@
 # vanillla-webpack-builder
-
+(TESTED ONLY IN UBUNTU 20.04 LTS)
 ## Why? 
- - Frontends that want to build a fast project design to test theories or study;
+ - Frontends that want to build a fast project to test code or study;
  - Time economic;
- - Easy pattern to start vanilla a application;
+ - Easy pattern to start vanilla application;
  - Webpack to use npm libraries;
  - Easy costumization, extremely open wide;
 
@@ -49,4 +49,4 @@ sudo chmod 755 ./vanillaproject.sh
 ```sh
 ./vanillaproject.sh
 ```
-## That´s it! 🎉 Have a good hack :computer: 😃 💻 
+## That´s it! 🎉 Have a good hack 💻😃 
