@@ -10,6 +10,7 @@
 ## Dependencies
  * [NodeJs](https://nodejs.org/en/) >= 14
  * [NPM](https://www.npmjs.com/get-npm) >= 6
+ * [yarn](https://yarnpkg.com/)
 
 ## How to use
 > Below of readme has a fast use tip
